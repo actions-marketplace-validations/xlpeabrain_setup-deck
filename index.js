@@ -42,6 +42,9 @@ async function action() {
 
   let os = getPlatform(process.platform);
   let arch = getArch(process.arch);
+  if (os == "darwin")
+    arch = "all"
+    
 
   const fullVersion = `${semverVersion}-${os}`;
   console.log(`Installing decK version ${fullVersion}`);
