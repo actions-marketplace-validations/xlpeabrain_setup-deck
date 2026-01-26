@@ -1,4 +1,4 @@
-name: Setup decK for xlpeabrain
+name: Setup decK
 description: Install decK from Kong
 runs:
   using: node12
