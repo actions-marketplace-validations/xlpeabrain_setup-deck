@@ -5,7 +5,7 @@ Install [decK](https://github.com/Kong/deck) so that it can be used in your GitH
 Add the following to your `steps` definition to install the latest version of `deck`:
 
 ```yaml
-- uses: kong/setup-deck@v1
+- uses: xlpeabrain/setup-deck@v1
 ```
 
 ## Sample workflow
@@ -19,14 +19,14 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: kong/setup-deck@v1
+      - uses: xlpeabrain/setup-deck@v1
       - run: deck version
 ```
 
 You can also specific a specific version to install with the `deck-version` input:
 
 ```yaml
-- uses: kong/setup-deck@v1
+- uses: xlpeabrain/setup-deck@v1
   with:
     deck-version: 1.7.0
 ```
@@ -37,7 +37,7 @@ If you need to capture the output for use in a later step, you can add a wrapper
 
 ```yaml
 steps:
-  - uses: kong/setup-deck@v1
+  - uses: xlpeabrain/setup-deck@v1
     with:
       deck-version: 1.7.0
       wrapper: true
